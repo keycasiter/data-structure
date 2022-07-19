@@ -19,7 +19,7 @@ func (list *ArrayList) GetSize() int {
 }
 
 func (list *ArrayList) Insert(idx int, element int) bool {
-	if idx < 0 || idx > list.size {
+	if idx < 1 || idx > list.size+1 {
 		fmt.Println("Insert failed, index range error.")
 		return false
 	}
@@ -28,10 +28,10 @@ func (list *ArrayList) Insert(idx int, element int) bool {
 		return false
 	}
 
-	for i := list.size - 1; i > idx; i-- {
+	for i := list.size - 1; i >= idx-1; i-- {
 		list.elements[i+1] = list.elements[i]
 	}
-	list.elements[idx] = element
+	list.elements[idx-1] = element
 	list.size++
 
 	return true
