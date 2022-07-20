@@ -26,4 +26,10 @@ func TestBit(t *testing.T) {
 
 	//~ 取反
 
+	//左移
+	LeftShift(11, 3)
+	LeftShift(-11, 3)
+	//右移
+	RightShift(11, 3)
+	RightShift(-11, 3)
 }

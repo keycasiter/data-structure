@@ -24,10 +24,14 @@ func Xor(x, y int) int {
 }
 
 func LeftShift(x, idx int) int {
+	fmt.Printf("%d << %d = %d\n", x, idx, x<<idx)
+	fmt.Printf("%.8b\n%d\n%.8b\n", x, idx, x<<idx)
 	return x << idx
 }
 
 func RightShift(x, idx int) int {
+	fmt.Printf("%d >> %d = %d\n", x, idx, x>>idx)
+	fmt.Printf("%.8b\n%d\n%.8b\n", x, idx, x>>idx)
 	return x >> idx
 }
 

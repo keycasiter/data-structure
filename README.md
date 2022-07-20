@@ -1,12 +1,12 @@
 # 数据结构
 
 ## 整数
+- 二进制
 - 位运算
 
   [菜鸟教程 · 位运算](https://www.runoob.com/w3cnote/bit-operation.html)
 
 - 数值范围越界问题
-- 二进制
 
 ## 字符串
 
