@@ -2,14 +2,16 @@ package sword_to_offer
 
 // f001 整数除法
 func F001(x, y int) int {
-	flag := 1
+	flag := false
+	if (x < 0 || y < 0) && !(x < 0 && y < 0) {
+		flag = true
+	}
+
 	if x < 0 {
 		x = -x
-		flag ^= -1
 	}
 	if y < 0 {
 		y = -y
-		flag ^= -1
 	}
 
 	if y == 0 {
@@ -21,7 +23,7 @@ func F001(x, y int) int {
 		x = x - y
 	}
 
-	if flag == 1 {
+	if flag {
 		return -result
 	} else {
 		return result
